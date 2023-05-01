@@ -1,0 +1,124 @@
+<html>
+<head>
+		<HTA:APPLICATION
+		APPLICATIONNAME="Zandroid Tool - Version 2.0"
+		SINGLEINSTANCE=no
+		SELECTION=no
+		ICON=favicon2.ico
+		BORDER=THIN
+		BORDERSTYLE=STATIC
+		MAXIMIZEBUTTON=NO
+		>
+<title>Zandroid Tool - Version 2.0</title>
+<script type="text/javascript">
+// W x H
+window.resizeTo(620, 490);
+WshShell = new ActiveXObject("WScript.Shell");
+WshShell.Run("DeviceDetection.exe", 1, false);
+
+function openfolder() {
+    WshShell.Run("OpenExplorer.exe", 1, false);
+	}
+function reboot() {
+    WshShell.Run("wscript.exe Reboot.vbs", 1, false);
+	}
+function rebootrecov() {
+    WshShell.Run("wscript.exe RebootRecovery.vbs", 1, false);
+	}
+function rebootdown() {
+    WshShell.Run("wscript.exe RebootDownload.vbs", 1, false);
+	}
+function rebootbl() {
+    WshShell.Run("wscript.exe RebootBootloader.vbs", 1, false);
+	}
+function rebootfb() {
+    WshShell.Run("wscript.exe RebootFastboot.vbs", 1, false);
+	}
+function poweroff() {
+    WshShell.Run("wscript.exe PowerOff.vbs", 1, false);
+	}
+function shell() {
+    WshShell.Run("cmd /c ADBShell.bat", 1, false);
+	}
+function sideload() {
+    WshShell.Run("cmd.exe /c Sideload.bat", 1, false);
+	}
+function installapk() {
+    WshShell.Run("cmd.exe /c ApkInstaller.bat", 1, false);
+	}
+function backup() {
+    WshShell.Run("cmd.exe /c BackupToolKit.bat", 1, false);
+	}
+function recheckdev() {
+    WshShell.Run("DeviceDetection.exe", 1, false);
+	}
+function killadb() {
+    WshShell.Run("wscript.exe RestartADB.vbs", 1, false);
+	}
+function screencaps() {
+    WshShell.Run("cmd.exe /c ScreenCap.bat", 1, false);
+	}
+function nolock() {
+    WshShell.Run("wscript.exe RemoveLockscreen.vbs", 1, false);
+	}
+function about() {
+    WshShell.Run("wscript.exe About.vbs", 1, false);
+	}
+function web() {
+    WshShell.Run("http://zandroidtool.blogspot.com", 1, false);
+	}
+</script>
+<style>
+body {margin:0;padding:0;overflow:hidden}
+span {font-family:segoe ui;font-size:17;color:#000000}
+p {margin:0;padding:0}
+button {background-color:#D8D8D8;height:30;border:none;font-family:segoe ui;font-size:15}
+</style>
+</head>
+<body>
+<div style="background-color:#0b6043">
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FFFFFF;font-size:22">Zandroid Tool</span>
+</div>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Booting Tools</span>
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="reboot()">Reboot</button>&nbsp;&nbsp;<button onclick="rebootrecov()">Reboot To Recovery</button>&nbsp;&nbsp;<button onclick="rebootdown()">Reboot To Download Mode</button>
+</p>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="rebootbl()">Reboot To Bootloader</button>&nbsp;&nbsp;<button onclick="rebootfb()">Reboot To Fastboot</button>&nbsp;&nbsp;<button onclick="poweroff()">Power Off</button>
+</p>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Advanced Tools</span>
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="installapk()">APK Installer</button>&nbsp;&nbsp;<button onclick="sideload()">Sideload</button>&nbsp;&nbsp;<button onclick="screencaps()">Take Screenshot</button>&nbsp;&nbsp;<button onclick="backup()">Backup Tool Kit</button>
+</p>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="recheckdev()">Check Device Connection</button>&nbsp;&nbsp;<button onclick="shell()">Open Shell</button>&nbsp;&nbsp;<button onclick="killadb()">Restart ADB Server</button>
+</p>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Fixing Tools</span>
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px">"If Ain't Broke Don't Fix It"</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px">"Root Access Required"</span>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="nolock()" style="width:250">Remove Lockscreen Security</button>&nbsp;&nbsp;<button onclick="WshShell.Run('wscript.exe FixPlayStore.vbs', 1, false);" style="width:270">Fix Play Store "No Connection"</button>
+</p>
+<p>
+&nbsp;
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Zandroid Tool By </span><span style="color:#0b6043;font-size:17" onclick="about()">ShiyamRRC</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="color:#0b6043" onclick="web()">Official Website</button>
+</body>
+</html>

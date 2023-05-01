@@ -1,0 +1,64 @@
+<html>
+<head>
+		<HTA:APPLICATION
+		APPLICATIONNAME="Zandroid Tool: Logging Device"
+		SINGLEINSTANCE=no
+		SELECTION=no
+		ICON=favicon2.PNG
+		BORDER=THIN
+		BORDERSTYLE=STATIC
+		MAXIMIZEBUTTON=NO
+		MINIMIZEBUTTON=NO
+		>
+<title>Zandroid Tool: Logging Device</title>
+<script type="text/javascript">
+// W x H
+window.resizeTo(400, 250);
+WshShell = new ActiveXObject("WScript.Shell");
+WshShell.Run("Logger.exe", 1, false);
+window.onunload=before;
+
+function openfolder() {
+    WshShell.Run("OpExplorer.exe", 1, false);
+	}
+function before()
+{
+    WshShell.Run("wscript.exe Logcat.vbs", 1, false);
+}
+function stoplogcat() {
+alert("Closing..");
+}
+</script>
+<style>
+body {margin:0;padding:0;overflow:hidden}
+span {font-family:segoe ui;font-size:17;color:#000000}
+p {margin:0;padding:0}
+button {background-color:#D8D8D8;height:30;border:none;font-family:segoe ui;font-size:15}
+</style>
+</head>
+<body>
+<div style="background-color:#0B610B" onunload="stoplogcat()">
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FFFFFF;font-size:20">Logging Started...</span>
+</div>
+&nbsp;
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>To Stop Logging, Click The "Stop" Button OR</span>
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Close This Window. The Logcat Can Be Located</span>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Using The "Open Folder" Button.</span>
+</p>
+<p>
+&nbsp;
+</p>
+<p style="text-align:center">
+<button onclick="openfolder()">Open Folder</button>&nbsp;&nbsp;<button style="width:70px" onclick="window.close()">Stop</button>
+</p>
+</body>
+</html>

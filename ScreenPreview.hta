@@ -1,0 +1,50 @@
+<html>
+<head>
+		<HTA:APPLICATION
+		APPLICATIONNAME="Zandroid Tool - Screenshot Preview"
+		SINGLEINSTANCE=no
+		SELECTION=no
+		ICON=favicon2.ico
+		BORDER=THIN
+		BORDERSTYLE=STATIC
+		MAXIMIZEBUTTON=NO
+		CLOSEBUTTON=NO
+		>
+<title>Zandroid Tool - Screenshot Preview</title>
+<script type="text/javascript">
+// W x H
+window.resizeTo(700, 500);
+WshShell = new ActiveXObject("WScript.Shell");
+
+function saveSS() {
+    WshShell.Run("wscript.exe ScreenSave.vbs", 1, false);
+	}
+
+function tryagain() {
+    WshShell.Run("cmd /c ScreenCap.bat", 1, false);
+	window.close();
+	}
+</script>
+<style>
+body {margin:0;padding:0;overflow:hidden}
+span {font-family:segoe ui;font-size:17;color:#000000}
+p {margin:0;padding:0}
+button {background-color:#3e8f73;height:30;border:none;font-family:segoe ui;font-size:15;color:#FFFFFF}
+</style>
+</head>
+<body>
+<div style="background-color:#0b6043">
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FFFFFF;font-size:20">Screenshot Preview</span>&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="saveSS()">Save</button>&nbsp;&nbsp;<button onclick="tryagain()">Take Screenshot Again</button>&nbsp;&nbsp;<button onclick="WshShell.Run('cmd /c Preview.bat', 1, false);">Open Folder</button>&nbsp;&nbsp;<button onclick="window.close()">Cancel</button>
+</div>
+&nbsp;
+<div >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe width="640" height="370" src="MainPreview.html" />
+</div>
+</body>
+</html>

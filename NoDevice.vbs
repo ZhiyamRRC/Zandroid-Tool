@@ -1,0 +1,1 @@
+x=msgbox ("No Device Detected." + vbCrLf + "Please Make Sure To:" + vbCrLf + "1. Turn On 'USB Debugging' On Your Device." + vbCrLf + "2. Connect Your Device To The PC." + vbCrLf + "3. Tap 'OK' On Allowing Pop Up On Your Device." , 0 + vbExclamation, "Zandroid Tool: No Device Detected")
