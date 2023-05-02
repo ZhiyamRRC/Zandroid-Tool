@@ -22,8 +22,8 @@
 
 ## How to Use
 1. Download and Install ADB And USB Drivers.<br>
-    ``https://dl.adbdriver.com/upload/ADBDriverInstaller.exe`` <br>
-    ``https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip``
+      ADB Drivers- ``https://dl.adbdriver.com/upload/ADBDriverInstaller.exe`` <br>
+      USB Drivers - ``https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip``
 2. Enable "USB Debugging" (Settings ==> Developer Options)
 3. Connect Your Device To PC Via USB Cable.
 4. Now You Can Use Above Features As You Like.
