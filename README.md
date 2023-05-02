@@ -1,8 +1,5 @@
 # Zandroid-Tool
-<br>
 <img src=https://2.bp.blogspot.com/-99SLzvXXtD8/VyNvQOcsBVI/AAAAAAAAArs/NnCvQIHfjVAOYRXawbG4jXRvmX7nOmx1gCK4B/s1600/Zandroid%2BTool%2BCover.jpg>
-<br>
-//All in One Android Tool
 
 
 ## Features
@@ -24,11 +21,14 @@
 
 
 ## How to Use
-1. Enable "USB Debugging" (Settings ==> Developer Options)
-2. Connect Your Device To PC Via USB Cable.
-3. Now You Can Use Above Features As You Like.
+1. Download and Install ADB And USB Drivers.<br>
+    ``https://dl.adbdriver.com/upload/ADBDriverInstaller.exe`` <br>
+    ``https://dl-ssl.google.com//android/repository/latest_usb_driver_windows.zip``
+2. Enable "USB Debugging" (Settings ==> Developer Options)
+3. Connect Your Device To PC Via USB Cable.
+4. Now You Can Use Above Features As You Like.
 <br>
 
 
 ## Creadits
-This app based on the idea of 3UDTool. Heartful thanks to the developer.
+This app based on the idea of U3DTool. Heartful thanks to the developer.
